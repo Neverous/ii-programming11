@@ -1,0 +1,16 @@
+Maciej Szeptuch 2012
+Programowanie L - Pracownia 2
+Interpreter języka deklaratywnego.
+
+KRÓTKI OPIS:
+
+main.pl - Główny plik projektu. Odpalać: swipl -l main.pl
+lexer.pl - Lekser.
+parser.pl - Parser.
+am.pl - Implementacja maszyny abstrakcyjnej obliczającej wyrażenia...
+
+comb.sl - testy z treści zadania...
+
+CO DZIAŁA A CO NIE?
+Parser, Lekser - ok.
+Interpreter/Maszyna Abstrakcyjna - Działa wszystko poza rekurencją, która używa funkcji zadeklarowanych lokalnie(czasem działa, ale rzadko) np. sort z ins zadeklarowanym lokalnie nie zadziała. Wiąże się to z tym, że starałem się zaimplementować leniwość korzystając z nawrotów i żeby nie działało niemiłosiernie długo podorzucałem odcięcia, co przy okazji powycinało część możliwości. Może da się to jakoś łatwo poprawić, żeby było szybko i poprawnie, ale ja nie wiem jak.
